@@ -51,8 +51,10 @@
  - 도커 컨테이너 백그라운드 실행 <br>
    <code> docker run  -d -p 2201:22  -p 8787:8787  -e PASSWORD=passwd --name rstudio-ssh rdmkyg/rstudio-ssh</code> <br>
    dropbox 링크 <code> docker run  -d  -v "E:\Dropbox:/home/rstudio"  -p 2201:22  -p 8787:8787  -e PASSWORD=passwd --name rstudio-ssh rdmkyg/rstudio-ssh </code> <br>
+ -  도커 빌드  도커 빌드하기 전에 반드시,  Dockerfile이 있어야 합니다.   <br>    
+ 
  - 도커 컨테이너를 이미지로 만들기 <br>
-   <code> docker commit rstudio-ssh rdmkyg/rstudio</code>  도커 컨테이너 만들기 전에 반드시,  Dockerfile이 있어야 합니다.   <br>     
+   <code> docker commit rstudio-ssh rdmkyg/rstudio</code>   
  - Docker tag 만들기 
    <code>   docker tag f4de856462da rdmkyg/rstudio.ssh </code>  <br>
  - Docker Hub에 이미지 올리기 
