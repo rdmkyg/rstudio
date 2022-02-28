@@ -41,24 +41,28 @@
 <br><br>
 
  ## 간단한 Docker 사용법 ##
- - 도커 이미지 조회 <br>
+ - 도커 이미지를  조회 합니다.  <br>
    <code>docker images</code> <br>
- - 도커 컨테이너 조회 <br>
+ - 도커 컨테이너를 조회 합니다.   <br>
    <code>docker ps -a </code> <br>
- - 도커 bash 시작, 시스템 환경 설정 이미지화 할때 필요 <br>
+ - 도커 bash 시작, 시스템 환경 설정 이미지화 할때 필요합니다.  <br>
    <code> docker run -it --rm rdmkyg/rstudio-ssh bash </code> <br>
-   <code> docker bash</code>에서는 <code>apt install</code> 실행되지 않음  <br>
- - 도커 컨테이너 백그라운드 실행 <br>
+   <code> docker bash</code>에서는 <code>apt install</code> 실행되지 않으므로 주위 하셔야 합니다.   <br>
+ - 도커 컨테이너 백그라운드 실행 합니다. <br>
    <code> docker run  -d -p 2201:22  -p 8787:8787  -e PASSWORD=passwd --name rstudio-ssh rdmkyg/rstudio-ssh</code> <br>
    dropbox 링크 <code> docker run  -d  -v "E:\Dropbox:/home/rstudio"  -p 2201:22  -p 8787:8787  -e PASSWORD=passwd --name rstudio-ssh rdmkyg/rstudio-ssh </code> <br>
  -  도커 빌드  도커 빌드하기 전에 반드시,  Dockerfile이 있어야 합니다.   <br>    
  
- - 도커 컨테이너를 이미지로 만들기 <br>
+ - 도커 컨테이너를 이미지로 만드는 방법입니다. <br>
    <code> docker commit rstudio-ssh rdmkyg/rstudio</code>   
- - Docker tag 만들기 
+ - Docker tag 만드는 방법입니다.  
    <code>   docker tag f4de856462da rdmkyg/rstudio.ssh </code>  <br>
- - Docker Hub에 이미지 올리기 
+ - Docker Hub에 이미지 올리는 방법 입니다. 
  - <code> docker push rdmkyg/rstudio.ssh </code>
+
+ ## Docker image 위치  ##
+   <a href ="https://hub.docker.com/repository/docker/rdmkyg/rstudio.ssh" >  rdmkyg/rstudio.ssh  </a> 방문 하시기 바랍니다. 
+
    
 
    
