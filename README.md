@@ -58,7 +58,7 @@
  - Docker tag 만드는 방법입니다.  
    <code>   docker tag f4de856462da rdmkyg/rstudio.ssh </code>  <br>
  - Docker Hub에 이미지 올리는 방법 입니다. 
- - <code> docker push rdmkyg/rstudio.ssh </code> <br><br>
+   <code> docker push rdmkyg/rstudio.ssh </code> <br><br>
 
  ## Docker image 위치  ##
    <a href ="https://hub.docker.com/repository/docker/rdmkyg/rstudio.ssh" >  rdmkyg/rstudio.ssh  </a> 방문 하시기 바랍니다. 
