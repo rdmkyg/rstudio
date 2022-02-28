@@ -23,6 +23,22 @@
  - 데이터 작업 Up/Download 편리성을 위해, 22번 ssh 포토드 사용 하였습니다. 
  - Dockerfile은 깃 허브 소스코드 안에 들어 있습니다. <br><br><br>
 
+## R 패키지 설치 명령어 ##
+ 설치 및 확인은 별도의 소스 코드로 올려 놓았습니다.  이건은 간단하게 올린 작업 입니다. 
+ 
+ ```
+  install.packages('devtools')   
+  install.packages("rJava")
+
+  install.packages(c('ggplot2','dplyr','tidyr','readr','purrr','tibble','lubridate',
+                     'stringr','forcats','broom','cli','crayon','dbplyr','haven',
+                     'hms','httr','jsonlite','magrittr', 'modelr','pillar','readxl',
+                     'reprex','rlang','rvest','xml2','rio','DBI','odbc','mongolite',
+                     ',RJDBC','RMariaDB', 'curl','data.table','survival','forecast',
+                     'survminer', 'muhaz','TTR','caret','latiice','e1071','kernlab',
+                     'shiny','mailR',"trelliscopejs","showtext"))
+```
+<br><br>
 
  ## 간단한 Docker 사용법 ##
  - 도커 이미지 조회 <br>
