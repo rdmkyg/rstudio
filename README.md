@@ -10,7 +10,7 @@
    &nbsp;  &nbsp;   세번째 ,  이 작업은  <a href ="https://github.com/rocker-org/rocker">  rocker-org </a> 을 참고 하여 작성 하였습니다.  <br><br><br>
    
 ## docker 컨테이너 Base 이미지 ##
-  아래  <a href = "https://github.com/rocker-org/rocker" > rocker/rstuio </a> 이미지를 사용 하였습니다. .  <br>
+  아래  <a href = "https://github.com/rocker-org/rocker" > rocker/rstudio </a> 이미지를 사용 하였습니다. .  <br>
   보다 자세한 내용을 보려면,   위의 링크를 참고 하여야 한다.  참고로,  위의 이미지는 R을 기본적으로 사용하는데 무리가 없습니다. .     <br>
   하지만,  R에서 사용하는 lubridate 나 한글,  rJava 와 같은 개발 플렛폼을 사용하기 위해서는 추가적인 작업이 필요합니다. <br><br><br> 
   
