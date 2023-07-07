@@ -24,15 +24,24 @@ RUN apt-get clean all && \
 #          mysql-server libmysqlclient20\
 #          vim \
 #         sudo \
+          libpoppler-cpp-dev\  
+          libtesseract-dev\   
+          tesseract-ocr-eng\    
+          libmagick++-dev\   
           apt-utils\
           && apt-get clean all && \
           apt-get purge && \
           rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# RUN usermod -aG sudo rstudio
+#RUN usermod -aG sudo rstudio
+
+
+# tesseract os devel package install 
+#RUN add-apt-repository -y ppa:cran/poppler
+#RUN apt-get update
+#RUN apt-get install -y libpoppler-cpp-dev
 
 #RUN rm /usr/local/lib/R/etc/Rprofile.site 
-
 #RUN echo '\n\
 # \n # R Profile site setting  \
 # \n Sys.setlocale(category = "LC_ALL",locale="ko_KR.UTF-8") \
@@ -62,4 +71,3 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 EXPOSE 22
 
 CMD ["sh", "-c", "/usr/sbin/sshd ; /init"]
-
